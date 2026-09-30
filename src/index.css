@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-agency-yellow: #FACC15;
+  --color-agency-yellow-hover: #EAB308;
+  --color-agency-yellow-dark: #CA8A04;
+  --color-agency-dark: #0B0F19;
+  --color-agency-navy: #0F172A;
+  --color-agency-card: #141B2D;
+  --color-agency-card-border: rgba(250, 204, 21, 0.15);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #0F172A;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-display);
+  }
+}
+
+/* Hide scrollbar for clean mobile horizontal pill scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom subtle patterns */
+.agency-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(250, 204, 21, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(250, 204, 21, 0.05) 1px, transparent 1px);
+}
+
+.agency-dark-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+
