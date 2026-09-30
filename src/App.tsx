@@ -16,8 +16,10 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import PlaceholdersModal from './components/PlaceholdersModal';
 import MobileBottomBar from './components/MobileBottomBar';
+import Preloader from './components/Preloader';
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [isPlaceholdersModalOpen, setIsPlaceholdersModalOpen] = useState(false);
   const [prefilledService, setPrefilledService] = useState<string>('Marketing Strategy');
   const [prefilledMessage, setPrefilledMessage] = useState<string>('');
@@ -56,6 +58,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-[#0F172A] flex flex-col font-sans selection:bg-[#FACC15] selection:text-[#0B0F19]">
       
+      {/* Intro Preloader Screen */}
+      <Preloader onLoadingComplete={() => setIsLoading(false)} />
+
       {/* Sticky Navigation */}
       <Navbar 
         onOpenPlaceholdersModal={() => setIsPlaceholdersModalOpen(true)}
