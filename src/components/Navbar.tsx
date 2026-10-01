@@ -98,6 +98,15 @@ export default function Navbar({ onOpenPlaceholdersModal, onGetStartedClick }: N
 
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">
             <a 
+              href={AGENCY_CONFIG.contact.whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:inline-flex items-center gap-1.5 text-[#25D366] hover:text-white transition-colors font-mono text-xs font-semibold"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse"></span>
+              <span>WhatsApp: {AGENCY_CONFIG.contact.whatsapp}</span>
+            </a>
+            <a 
               href={`mailto:${AGENCY_CONFIG.contact.email}`}
               className="hidden md:inline text-slate-300 hover:text-[#FACC15] transition-colors font-mono text-xs"
             >
@@ -226,6 +235,17 @@ export default function Navbar({ onOpenPlaceholdersModal, onGetStartedClick }: N
                       Email Us
                     </a>
                   </div>
+
+                  {/* Direct WhatsApp Mobile Drawer Button */}
+                  <a
+                    href={AGENCY_CONFIG.contact.whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-lg bg-[#25D366]/20 border border-[#25D366]/40 text-[#25D366] text-center font-semibold hover:bg-[#25D366]/30 flex items-center justify-center gap-2 min-h-[44px] text-xs"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+                    <span>WhatsApp Enquiry: {AGENCY_CONFIG.contact.whatsapp}</span>
+                  </a>
 
                   <button
                     onClick={handleCtaClick}

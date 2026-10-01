@@ -16,6 +16,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import PlaceholdersModal from './components/PlaceholdersModal';
 import MobileBottomBar from './components/MobileBottomBar';
+import WhatsAppButton from './components/WhatsAppButton';
 import Preloader from './components/Preloader';
 
 export default function App() {
@@ -116,6 +117,9 @@ export default function App() {
       <MobileBottomBar 
         onGetStartedClick={scrollToContact}
       />
+
+      {/* Floating WhatsApp Action Button */}
+      <WhatsAppButton />
 
       {/* Placeholders Guide Modal */}
       <PlaceholdersModal 

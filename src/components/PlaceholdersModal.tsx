@@ -13,6 +13,7 @@ export default function PlaceholdersModal({ isOpen, onClose }: PlaceholdersModal
 
   const placeholders = [
     { label: 'Company Phone', value: AGENCY_CONFIG.contact.phone, key: 'phone', note: 'Verified Live Line' },
+    { label: 'WhatsApp Enquiry', value: AGENCY_CONFIG.contact.whatsapp, key: 'whatsapp', note: 'Verified WhatsApp' },
     { label: 'Company Email', value: AGENCY_CONFIG.contact.email, key: 'email', note: 'Verified Official' },
     { label: 'Office Address', value: AGENCY_CONFIG.contact.address, key: 'address', note: 'Verified Location' },
     { label: 'Company Website', value: AGENCY_CONFIG.contact.website, key: 'website', note: 'Verified Domain' },

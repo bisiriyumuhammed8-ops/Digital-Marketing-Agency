@@ -34,6 +34,9 @@ export const AGENCY_CONFIG = {
   contact: {
     email: "bisiriyumuhammed8@gmail.com",
     phone: "07078187296",
+    whatsapp: "07078187296",
+    whatsappFormatted: "+234 707 818 7296",
+    whatsappLink: "https://wa.me/2347078187296?text=Hello%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20digital%20marketing%20services.",
     address: "Lekki phase 2 block 0302",
     website: "www.digitalmarketing.com",
   },
@@ -42,6 +45,7 @@ export const AGENCY_CONFIG = {
     website: "www.digitalmarketing.com",
     address: "Lekki phase 2 block 0302",
     phone: "07078187296",
+    whatsapp: "07078187296",
   },
   images: {
     hero: "/src/assets/images/hero_marketing_studio_1790798365360.jpg",
